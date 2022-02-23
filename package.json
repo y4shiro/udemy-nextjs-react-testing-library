@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest --env=jsdom --verbose"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -27,5 +28,14 @@
     "eslint-config-next": "12.1.0",
     "jest": "^27.5.1",
     "jest-css-modules": "^2.1.0"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "<rootDir>/.next/",
+      "<rootDir>/node_modules/"
+    ],
+    "moduleNameMapper": {
+      "\\.(css)$": "<rootDir>/node_modules/jest-css-modules"
+    }
   }
 }
