@@ -7,5 +7,5 @@ import Home from '../pages/index';
 
 it('Should render hello text', () => {
   render(<Home />);
-  expect(screen.getByText('Hello Next.js')).toBeInTheDocument();
+  expect(screen.getByText('Welcome to Next.js')).toBeInTheDocument();
 });
