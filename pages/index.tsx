@@ -1,8 +1,10 @@
+import Layout from '../components/Layout';
+
 const Home: React.VFC = () => {
   return (
-    <div className="flex justify-center items-center flex-col min-h-screen font-mono">
-      Hello Next.js
-    </div>
+    <Layout title="Home">
+      <p className="text-4xl">Welcome to Next.js</p>
+    </Layout>
   );
 };
 
