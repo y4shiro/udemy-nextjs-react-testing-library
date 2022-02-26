@@ -32,7 +32,8 @@ const TaskPage: React.VFC<STATICPROPS> = ({ staticTasks }) => {
         {tasks &&
           tasks.map((task) => (
             <li key={task.id}>
-              {`${task.id}: `}
+              {task.id}
+              {': '}
               <span>{task.title}</span>
             </li>
           ))}
@@ -40,10 +41,9 @@ const TaskPage: React.VFC<STATICPROPS> = ({ staticTasks }) => {
     </Layout>
   );
 };
-
 export default TaskPage;
 
-const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const staticTasks = await getAllTasksData();
   return {
     props: { staticTasks },

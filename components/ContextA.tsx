@@ -6,8 +6,10 @@ const ContextA: React.VFC = () => {
   return (
     <>
       <button
-        className="bg-gray-500 hover:bg-gray-400 px-3 py-2 mb-5 text-white rouded focus:outline-none"
-        onClick={() => setToggle(!toggle)}
+        className="bg-gray-500 hover:bg-gray-400 px-3 py-2 mb-5 text-white rounded focus:outline-none"
+        onClick={() => {
+          setToggle(!toggle);
+        }}
       >
         change
       </button>
@@ -18,5 +20,4 @@ const ContextA: React.VFC = () => {
     </>
   );
 };
-
 export default ContextA;
