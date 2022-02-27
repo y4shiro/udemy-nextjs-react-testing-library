@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'djoser',
     'api.apps.ApiConfig',
-    'sorsheaders',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
